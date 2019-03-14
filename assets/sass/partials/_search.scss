@@ -1,0 +1,13 @@
+.entry-meta--byline {
+  font-family: $proxima;
+  font-size: 0.9rem;
+  font-weight: $medium;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color: $emerald;
+
+  a {
+    font-family: $proxima;
+    font-weight: $medium;
+  }
+}
