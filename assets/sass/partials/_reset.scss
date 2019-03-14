@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $sapphire;
+
+  &:hover {
+    color: $aqua;
+    text-decoration: none;
+  }
+}
+
+p {
+  font-family: $freight;
+  color: $dark-gray;
+
+  a {
+    color: $sapphire;
+    font-weight: $bold;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+em, i, strong, b {
+  font-family: inherit;
+}
+
+#content.site-content {
+  padding: 0;
+}
+
+.btn-primary {
+  border: none;
+
+}
+
+/* Hide the admin bar */
+body {
+  //margin-top: -32px !important;
+
+  @media screen and (max-width: 782px) {
+    //margin-top: -46px;
+  }
+
+}
+
+div#wpadminbar {
+  display: none;
+}
