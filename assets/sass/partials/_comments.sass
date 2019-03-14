@@ -1,0 +1,43 @@
+/* Post comments styles */
+
+div.comments-area {
+
+  form {
+    textarea#comment {
+      max-height: 600px;
+    }
+
+    .alert-info {
+        background: $butter;
+        font-family: $proxima;
+        font-size: 0.85rem;
+    }
+
+    .comment-form-author, .comment-form-email, .comment-form-url {
+      label {
+        font-family: $proxima;
+        font-weight: $light;
+        min-width: 100px;
+      }
+
+      input {
+        border-radius: 2px;
+        border: 1px solid #ced4da;
+      }
+    }
+
+    input#commentsubmit {
+      margin-left: 0;
+      margin-right: 0;
+      padding: .25rem .75rem;
+    }
+
+  }
+
+  .comment-content.card-block {
+    padding-bottom: 6px;
+  }
+
+
+
+}
