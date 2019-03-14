@@ -1,0 +1,30 @@
+
+
+/*
+Some general utility classes,
+for things like negative offset
+*/
+
+.neg-offset-l-4 {
+  margin-left: calc( (-100% / 12) * 4 );
+
+  @media screen and (max-width: 992px) {
+    margin-left: calc( -100% / 12 * 3 );
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-left: calc( -100% / 12 );
+  }
+}
+
+.neg-offset-r-4 {
+  margin-right: calc( (-100% / 12) * 4 );
+
+  @media screen and (max-width: 992px) {
+    margin-right: calc( -100% / 12 * 3 );
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-right: calc( -100% / 12 );
+  }
+}
