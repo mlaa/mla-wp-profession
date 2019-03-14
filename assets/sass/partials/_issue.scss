@@ -1,0 +1,17 @@
+/*
+ *
+ * Issue contents page styles
+ *
+ */
+
+.current-issue-article {
+
+  h5 {
+    font-size: 1.6rem;
+  }
+
+  .byline {
+    font-family: $proxima;
+    font-size: 1.1rem;
+  }
+}
