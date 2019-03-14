@@ -1,0 +1,44 @@
+/* Colors */
+
+$olive: #9CB187;
+$sapphire: #116889;
+$aqua: #24BCBA;
+$tea: #D0E6B9;
+$butter: #FBF5DF;
+$emerald: #21746F;
+
+$dark-gray: #363636;
+$medium-gray: #585858;
+
+$white: #ffffff;
+
+
+/* Typography */
+
+$freight: "freight-text-pro", freight-text-pro, "Adobe Caslon Pro", "Adobe Garamond Pro", Garamond, serif;
+$proxima: "proxima-nova", proxima-nova, "Helvetica Neue", Helvetica, sans-serif;
+
+$light: 300;
+$regular: 400;
+$medium: 500;
+$bold: 700;
+
+
+/* breakpoints */
+$breakpoint-super: 1500px;
+$breakpoint-xl: 1200px;
+$breakpoint-lg: 992px;
+
+/* Word break mixin */
+@mixin word-wrap() {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  //-ms-word-break: break-all;
+  //word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  line-break: strict;
+}
