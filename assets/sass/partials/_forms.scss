@@ -1,0 +1,111 @@
+/*
+Subscription form
+*/
+
+
+.wFormContainer {
+  margin: 0 !important;
+  padding: 0 !important;
+
+  .wFormHeader, .wFormFooter {
+    display: none;
+  }
+
+  .wForm {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    .label {
+      margin-bottom: 0;
+      padding-bottom: 0 !important;
+      font-family: $proxima;
+    }
+
+    .inputWrapper {
+      width: 100% !important;
+    }
+
+    input {
+      border-radius: 2px !important;
+
+      &[type="text"] {
+        width: 100% !important;
+      }
+    }
+
+    .preField {
+      min-width: 0;
+    }
+
+    h3.wFormTitle {
+      display: none;
+    }
+
+    #tfa_1-D, #tfa_2-D, #tfa_4-D {
+      display: inline-block;
+      width: calc( 50% - 6px );
+      padding: 0;
+      margin: 0;
+      border: none;
+    }
+
+    #tfa_1-D {
+      margin-right: 6px;
+    }
+
+    #tfa_4-D {
+      width: calc( 100% );
+      margin-top: .5rem;
+    }
+
+    #tfa_5-D {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      margin-top: 0.5rem;
+      max-width: 100%;
+
+     .inputWrapper {
+       textarea {
+         height: 180px;
+         width: 100%;
+         min-height: 100px;
+         max-height: 350px;
+
+       }
+
+     }
+    }
+
+    .actions {
+      margin: 0;
+      padding: 0;
+      border: none;
+
+      .primaryAction {
+        padding: .15rem .35rem;
+        background: $sapphire;
+        width: 100%;
+        text-transform: uppercase;
+        font-weight: $light;
+        letter-spacing: 0.1rem;
+        display: block;
+        margin: 1rem auto 0;
+
+        &:hover {
+          background: $aqua;
+        }
+      }
+    }
+
+  }
+}
+
+
+/* Submit a resource form */
+.resource-intro {
+
+  .oneField {
+    margin-top: 1rem !important;
+  }
+}
