@@ -346,7 +346,7 @@ div.comments-area .comment-content.card-block {
   .issue-contents article {
     font-family: "proxima-nova", proxima-nova, "Helvetica Neue", Helvetica, sans-serif;
     margin: 1.25rem 0 0 0; }
-    .issue-contents article:nth-of-type(5) {
+    .issue-contents article:nth-of-type(4) {
       padding-bottom: .75rem;
       border-bottom: 1px solid #D0E6B9; }
     .issue-contents article:first-of-type {
@@ -421,28 +421,32 @@ Site summary bar
 /*
 Left-column Articles Block
 */
-.article-block__left-col article {
-  margin-bottom: 1.5rem; }
-  .article-block__left-col article.link p {
-    font-size: 0.8rem;
-    line-height: 1.2rem; }
-  .article-block__left-col article.link :hover {
-    opacity: 0.9; }
-  .article-block__left-col article.link h6 {
-    border-bottom: none;
-    padding-top: 1rem; }
-  .article-block__left-col article.archive-story p.byline {
-    margin-bottom: 0; }
-  .article-block__left-col article h6 {
-    font-family: "proxima-nova", proxima-nova, "Helvetica Neue", Helvetica, sans-serif; }
-  .article-block__left-col article a {
-    color: #363636; }
-    .article-block__left-col article a:hover {
-      color: #116889; }
-  .article-block__left-col article p {
-    font-family: "proxima-nova", proxima-nova, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 0.85rem;
-    line-height: 1.5rem; }
+.article-block__left-col article.link p {
+  font-size: 0.8rem;
+  line-height: 1.2rem; }
+
+.article-block__left-col article.link :hover {
+  opacity: 0.9; }
+
+.article-block__left-col article.link h6 {
+  border-bottom: none;
+  padding-top: 1rem; }
+
+.article-block__left-col article.archive-story p.byline {
+  margin-bottom: 0; }
+
+.article-block__left-col article h6 {
+  font-family: "proxima-nova", proxima-nova, "Helvetica Neue", Helvetica, sans-serif; }
+
+.article-block__left-col article a {
+  color: #363636; }
+  .article-block__left-col article a:hover {
+    color: #116889; }
+
+.article-block__left-col article p {
+  font-family: "proxima-nova", proxima-nova, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.5rem; }
 
 /*
 Resources Sidebar
@@ -978,6 +982,8 @@ h3.block-head {
   text-align: center;
   /* Use pseudo-elements to set horizontal line on either side of title */
   /* This protects the layout if heading wraps onto another line */ }
+  h3.block-head a {
+    font-family: inherit; }
   h3.block-head:before, h3.block-head:after {
     content: '';
     flex-grow: 1;

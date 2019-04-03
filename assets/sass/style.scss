@@ -1,0 +1,30 @@
+/*
+Theme Name: WP Boostrap Starter Child
+Description: Child theme for Profession Web site
+Author: MLA
+Author URI: https://www.mla.org
+Template: wp-bootstrap-starter
+Version: 1.0
+Text domain: wp-bootstap-starter-child
+*/
+
+@import url("https://use.typekit.net/ynp5wdh.css");
+
+@import 'partials/variables';
+@import 'partials/reset';
+@import 'partials/utils';
+@import 'partials/nav';
+@import 'partials/forms';
+@import 'partials/search';
+@import 'partials/comments';
+
+
+@import 'partials/home';
+@import 'partials/resources';
+
+
+@import 'partials/post';
+
+@import 'partials/issue';
+
+@import 'partials/main';

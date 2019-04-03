@@ -40,6 +40,10 @@ h3.block-head {
   line-height: 1em;
   text-align: center;
 
+  a {
+    font-family: inherit;
+  }
+
   //border-bottom: 1px solid $aqua;
 
   /* Use pseudo-elements to set horizontal line on either side of title */
