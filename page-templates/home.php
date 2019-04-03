@@ -179,6 +179,7 @@ get_header();
                 };
                 wp_reset_query();
               ?>
+             <a href="features" class="btn pl-4 pr-4">View all features</a>
             </div>
             <!-- Latest features - end -->
 
