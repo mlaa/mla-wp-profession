@@ -147,7 +147,7 @@ get_header();
           <div class="article-block__left-col col-sm-12 col-md-6 col-lg-8">
 
             <!-- Lastest Features - start -->
-            <h3 class="block-head"><span>The Latest Features</span></h3>
+            <h3 class="block-head"><span>In Practice</span></h3>
 
             <div class="row">
               <?php
@@ -184,7 +184,7 @@ get_header();
                 };
                 wp_reset_query();
               ?>
-             <a href="features" class="btn pl-4 pr-4">View all features</a>
+             <a href="features" class="btn pl-4 pr-4">View All</a>
             </div>
             <!-- Latest features - end -->
 
@@ -271,7 +271,7 @@ get_header();
 
             <?php
               $resources_args = array(
-                'post_type'        => 'resource',
+                'post_type'        => 'opportunity',
                 'posts_per_page'   => '12',
                 'orderby'          => 'date',
                 'order'            => 'DESC'
@@ -299,7 +299,7 @@ get_header();
                 };
               };
             ?>
-            <a class="btn" href="resources">View More Resources</a>
+            <a class="btn" href="resources">View More Opportunities</a>
             <!-- Resources block - end -->
 
             <!-- Subscribe form - start -->

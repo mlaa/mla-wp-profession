@@ -39,7 +39,7 @@ get_header();
         $paged = ( get_query_var('paged') > 1 ) ? get_query_var('paged') : 1;
 
         $args = array(
-          'post_type'           => 'resource',
+          'post_type'           => 'opportunity',
           'meta_query'          => array(
                                       'resource-type' => array(
                                         'key'     => 'resource_type',
@@ -226,11 +226,11 @@ get_header();
       <aside id="secondary" class="widget-area col-sm-12 col-lg-3 mt-5 article-block__right-col" role="complementary">
 
       	<h3 class="mb-3">
-      		Other Recent Resources
+      		Other Opportunities
       	</h3>
       	<?php
       		$resources_args = array(
-      			'post_type'        => 'resource',
+      			'post_type'        => 'opportunity',
       			'post__not_in'		 =>	$exclude_posts,
       			'posts_per_page'   => '12',
       			'orderby'          => 'date',
