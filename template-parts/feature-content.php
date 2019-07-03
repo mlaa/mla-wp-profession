@@ -22,8 +22,14 @@
 				<?php
 
 				the_title( '<h1 class="entry-title col-lg-8 col-12 offset-lg-2">', '</h1>' );
+				
+				// Check for presence of author.
+				if (get_field('author_name') || get_field('author_last_name')) {
 				?>
-				<p class="post-byline">By <?php echo full_name(get_the_ID()) ?></p>
+					<p class="post-byline">By <?php echo full_name(get_the_ID()) ?></p>
+				<?php
+				};
+				?>
 
 				</div> <!-- End of hero/gradient section -->
 			</header><!-- .entry-header -->

@@ -46,9 +46,15 @@
 
 				<?php
 				the_title( '<h1 class="entry-title">', '</h1>' );
+				
+				// Check for presence of author.
+				if (get_field('author_name') || get_field('author_last_name')) {
 				?>
-				<p class="post-byline">By <?php echo full_name(get_the_ID()) ?></p>
+					<p class="post-byline">By <?php echo full_name(get_the_ID()) ?></p>
 				<?php
+				};
+
+				
 			else :
 				the_title( '<h4 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h4>' );
 			endif;
