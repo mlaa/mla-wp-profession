@@ -93,7 +93,12 @@ get_header();
                     <a href="<?php the_permalink() ?>">
                       <h4><?php the_title() ?></h4>
                     </a>
-                    <p>By <?php echo implode(' ', array(get_field('author_name'), get_field('author_last_name') ) ) ?></p>
+
+                    <?php if (get_field('author_name') || get_field('author_last_name')) {
+                    ?>
+                      <p>By <?php echo implode(' ', array(get_field('author_name'), get_field('author_last_name') ) ) ?></p>
+                    <?php 
+                    }; ?>
 
 
                   </article>
