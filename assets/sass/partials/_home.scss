@@ -18,9 +18,18 @@
     font-family: $proxima;
     margin: 1.25rem 0 0 0;
 
-    &:nth-of-type(4) {
-      padding-bottom: .75rem;
-      border-bottom: 1px solid $tea;
+    
+    // This is the "first-of-class" workaround.
+    // Target all articles with a class, 
+    // and then reset the styles for siblings. 
+    &.non-thematic {
+      padding-top: .75rem;
+      border-top: 1px solid $tea;
+    }
+
+    &.non-thematic ~ .non-thematic {
+      padding-top: 0;
+      border-top: none;
     }
 
     &:first-of-type {
