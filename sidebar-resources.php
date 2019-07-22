@@ -15,11 +15,11 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 <aside id="secondary" class="widget-area col-10 offset-1 col-sm-12 col-lg-3 article-block__right-col mt-5" role="complementary">
 
 	<h3 class="">
-		Most Recent Resources
+		More Opportunities
 	</h3>
 	<?php
 		$resources_args = array(
-			'post_type'        => 'resource',
+			'post_type'        => 'opportunity',
 			//'post__not_in'		 =>	$resources,
 			'posts_per_page'   => '12',
 			'orderby'          => 'date',

@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Resources
+ * Template Name: Opportunities
  *
  * @package WP_Bootstrap_Starter
  */
@@ -33,7 +33,7 @@ get_header();
         $paged = ( get_query_var('paged') > 1 ) ? get_query_var('paged') : 1;
 
         $args = array(
-          'post_type'   => 'resource',
+          'post_type'   => 'opportunity',
           'meta_query'          => array(
                                       'resource-type' => array(
                                         'key'     => 'resource_type',
@@ -77,7 +77,7 @@ get_header();
 
             <?php
              $args = array(
-               'post_type'   => 'resource',
+               'post_type'   => 'opportunity',
                'meta_query'          => array(
                                            'resource-type' => array(
                                              'key'     => 'resource_type',
@@ -144,7 +144,7 @@ get_header();
           <div class="row">
             <?php
             $args = array(
-              'post_type'   => 'resource',
+              'post_type'   => 'opportunity',
               'meta_query'          => array(
                                           'resource-type' => array(
                                             'key'     => 'resource_type',
@@ -214,7 +214,7 @@ get_header();
           <div class="row">
             <?php
             $args = array(
-              'post_type'   => 'resource',
+              'post_type'   => 'opportunity',
               'meta_query'          => array(
                                           'resource-type' => array(
                                             'key'     => 'resource_type',
@@ -285,7 +285,7 @@ get_header();
           <div class="row">
             <?php
             $args = array(
-              'post_type'   => 'resource',
+              'post_type'   => 'opportunity',
               'meta_query'          => array(
                                           'resource-type' => array(
                                             'key'     => 'resource_type',
