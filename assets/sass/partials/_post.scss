@@ -156,7 +156,21 @@ article.post {
     background-repeat:no-repeat;
     background-position:center center;
     */
+
+
     }
+
+     &.caption:first-of-type:first-letter {
+        background: none;
+        margin: 0;
+        border-radius: 0;
+        font-style: inherit;
+        color: inherit;
+        line-height: inherit;
+        font-size: 1.3rem;
+        float: none;   
+        padding: 0;
+      }
 
     //Fix note anchor link padding
     a:target, span:target {
