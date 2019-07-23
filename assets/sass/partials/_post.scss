@@ -68,6 +68,16 @@ h1.entry-title {
   border-bottom: none;
 }
 
+article.post {
+  h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2rem 0 1rem;
+    font-weight: 500;
+
+  }
+}
+
 .issue-number {
   font-family: $proxima;
   text-align: center;
@@ -418,14 +428,14 @@ span.license-type {
  article.archive {
 
    h3 {
-     font-weight: $medium;
-     font-size: 1.35rem;
-     text-transform: uppercase;
-     letter-spacing: 0.075rem;
-     margin: 2rem auto 1rem;
-     font-family: $freight;
-     padding: 0 0 1rem;
-     text-align: center;
+    // font-weight: $medium;
+    // font-size: 1.35rem;
+    //text-transform: uppercase;
+    // letter-spacing: 0.075rem;
+    // margin: 2rem auto 1rem;
+    // font-family: $freight;
+    // padding: 0 0 1rem;
+    // text-align: center;
      //border-bottom: 1px solid lighten($sapphire, 20%);
    }
 
