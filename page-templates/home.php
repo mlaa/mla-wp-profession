@@ -299,7 +299,7 @@ get_header();
                 };
               };
             ?>
-            <a class="btn" href="resources">View More Opportunities</a>
+            <a class="btn" href="opportunities">View More Opportunities</a>
             <!-- Resources block - end -->
 
             <!-- Subscribe form - start -->

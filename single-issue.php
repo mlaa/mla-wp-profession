@@ -79,8 +79,10 @@ get_header(); ?>
 							?>
 							<article class="mt-4 current-issue-article col-md-6">
 								<h5><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h5>
+								<?php if (get_field('author_name') || get_field('author_last_name')) {
+                    			?>
 								<p class="byline">By <?php echo full_name(get_the_ID()); ?></p>
-								<?php the_excerpt(); ?>
+								<?php ;} the_excerpt(); ?>
 							</article>
 							<?php
 						};
