@@ -184,7 +184,7 @@ get_header();
                 };
                 wp_reset_query();
               ?>
-             <a href="features" class="btn pl-4 pr-4">View All</a>
+             <a href="in-practice" class="btn pl-4 pr-4">View All</a>
             </div>
             <!-- Latest features - end -->
 
