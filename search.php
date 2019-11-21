@@ -25,8 +25,8 @@ $search_type = $_GET["site_section"];
 	      <div class="row">
 	        <h1 class="col-sm-12 col-lg-8 offset-lg-2">
 						<?php
-						if ($search_type == 'resource') {
-							echo 'Resources related to '.get_search_query();
+						if ($search_type == 'opportunity') {
+							echo 'Oppotunities related to '.get_search_query();
 						} else {
 							printf( esc_html__( 'Search Results for %s', 'wp-bootstrap-starter' ), '<span>' . get_search_query() . '</span>' );
 						}
@@ -54,7 +54,7 @@ $search_type = $_GET["site_section"];
 						/*
 						 * Run the loop for the search to output the results
 						 */
-						if ($search_type == 'resource') {
+						if ($search_type == 'opportunity') {
 
 							get_template_part( 'template-parts/content', 'resources-search' );
 						} else {
