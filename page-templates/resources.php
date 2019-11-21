@@ -62,8 +62,8 @@ get_header();
 
             <label class="col-9">
                 <input type="search" class="search-field form-control" placeholder="<?php echo esc_attr_x( 'Search &hellip;', 'placeholder', 'wp-bootstrap-starter' ); ?>" value="<?php echo esc_attr( get_search_query() ); ?>" name="s" title="<?php _ex( 'Search for:', 'label', 'wp-bootstrap-starter' ); ?>">
-                <input type="hidden" name="post_type" value="resource" />
-                <input type="hidden" name="site_section" value="resource" />
+                <input type="hidden" name="post_type" value="opportunity" />
+                <input type="hidden" name="site_section" value="opportunity" />
             </label>
             <input type="submit" class="search-submit btn btn-default col-3 h-100" value="<?php echo esc_attr_x( 'Search', 'submit button', 'wp-bootstrap-starter' ); ?>">
         </form>
