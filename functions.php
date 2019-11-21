@@ -371,4 +371,21 @@ function wp_search_size($query) {
 }
 add_filter('pre_get_posts', 'wp_search_size'); // Hook our custom function onto the request filter
 
- ?>
+
+
+add_filter( 'comment_form_defaults', function ( $args ) {
+	// i.e. different themes may have different form structures.
+	// 15 zine uses comment-form which is not using hte hook system so not affected.
+	$args['comment_notes_before'] = "<p class=\"comment-notes\"><span id=\"email-notes\">Your e-mail address will not be published.</span> Required fields are marked <span class=\"required\">*</span>.</p>";
+
+	return $args;
+} );
+
+add_filter( 'comment_form_default_fields', 'profession_comment_form_fields' );
+
+function profession_comment_form_fields( $fields ) {
+
+	$fields['email']  = '<p class="comment-form-email"><label for="email">' . __( 'E-mail' ) . '<span class="required">*</span></label><input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .'" size="30" /></p>';
+
+	return $fields;
+}
