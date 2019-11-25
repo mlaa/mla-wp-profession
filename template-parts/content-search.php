@@ -16,11 +16,23 @@
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
 			<p class="entry-meta--byline">
+			<?php 
+				// Check for presence of author.
+				if (get_field('author_name') || get_field('author_last_name')) {
+			?>
+			
 				By <?php echo full_name(get_the_ID()) ?>
-				<?php ?>
-				<?php if (get_field('article_type') === 'article' ) : ?>
-					<?php $issue = get_field('issue'); ?>
-					| <a href="<?php echo get_permalink( $issue[0] ) ?>"><?php echo get_the_title($issue[0]) ?></a> 
+
+			<?php 
+				}
+			if (get_field('article_type') === 'article' ) : ?>
+
+				<?php $issue = get_field('issue'); 
+				if (get_field('author_name') || get_field('author_last_name')) {
+					 	echo ' | ';
+					 } 
+				?>
+					<a href="<?php echo get_permalink( $issue[0] ) ?>"><?php echo get_the_title($issue[0]) ?></a> 
 				<?php endif; ?>
 			</p>
 		</div><!-- .entry-meta -->
