@@ -389,3 +389,25 @@ function profession_comment_form_fields( $fields ) {
 
 	return $fields;
 }
+
+function profession_search_query( $query ) {
+
+        if (
+                is_search() &&
+                ! ( defined( 'WP_CLI' ) && WP_CLI ) &&
+                ! apply_filters( 'ep_skip_query_integration', false, $query )
+        ) {
+                $query->set(
+                        'search_fields', array(
+                                                'post_content',
+                                                'post_title',
+                                                'post_excerpt',
+                                                'meta' => array( 'author_first_name',
+                                                                 'author_last_name',
+                                                )));
+
+
+        }
+}
+
+add_action( 'pre_get_posts', 'profession_search_query', 1 );
