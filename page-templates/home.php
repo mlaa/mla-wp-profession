@@ -306,7 +306,93 @@ get_header();
             <h3 class="block-head pt-4"><span>Subscribe to <em>Profession</em></span></h3>
 
             <div class="col-sm-12">
-              <?php echo do_shortcode("[formassembly formid=4696002]"); ?>
+              <!-- FORM: HEAD SECTION -->
+
+              <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+                      <script type="text/javascript">
+                  document.addEventListener("DOMContentLoaded", function(){
+                      const FORM_TIME_START = Math.floor((new Date).getTime()/1000);
+                      let formElement = document.getElementById("tfa_0");
+                      if (null === formElement) {
+                          formElement = document.getElementById("0");
+                      }
+                      let appendJsTimerElement = function(){
+                          let formTimeDiff = Math.floor((new Date).getTime()/1000) - FORM_TIME_START;
+                          let cumulatedTimeElement = document.getElementById("tfa_dbCumulatedTime");
+                          if (null !== cumulatedTimeElement) {
+                              let cumulatedTime = parseInt(cumulatedTimeElement.value);
+                              if (null !== cumulatedTime && cumulatedTime > 0) {
+                                  formTimeDiff += cumulatedTime;
+                              }
+                          }
+                          let jsTimeInput = document.createElement("input");
+                          jsTimeInput.setAttribute("type", "hidden");
+                          jsTimeInput.setAttribute("value", formTimeDiff.toString());
+                          jsTimeInput.setAttribute("name", "tfa_dbElapsedJsTime");
+                          jsTimeInput.setAttribute("id", "tfa_dbElapsedJsTime");
+                          jsTimeInput.setAttribute("autocomplete", "off");
+                          if (null !== formElement) {
+                              formElement.appendChild(jsTimeInput);
+                          }
+                      };
+                      if (null !== formElement) {
+                          if(formElement.addEventListener){
+                              formElement.addEventListener('submit', appendJsTimerElement, false);
+                          } else if(formElement.attachEvent){
+                              formElement.attachEvent('onsubmit', appendJsTimerElement);
+                          }
+                      }
+                  });
+              </script>
+
+              <link href="https://www.tfaforms.com/dist/form-builder/5.0.0/wforms-layout.css?v=0246591584232a6325b1af88966a271ab79612dc" rel="stylesheet" type="text/css" />
+
+              <link href="https://www.tfaforms.com/uploads/themes/theme-52691.css" rel="stylesheet" type="text/css" />
+              <link href="https://www.tfaforms.com/dist/form-builder/5.0.0/wforms-jsonly.css?v=0246591584232a6325b1af88966a271ab79612dc" rel="alternate stylesheet" title="This stylesheet activated by javascript" type="text/css" />
+              <script type="text/javascript" src="https://www.tfaforms.com/wForms/3.11/js/wforms.js?v=0246591584232a6325b1af88966a271ab79612dc"></script>
+              <script type="text/javascript">
+                  wFORMS.behaviors.prefill.skip = false;
+              </script>
+                  <script type="text/javascript" src="https://www.tfaforms.com/wForms/3.11/js/localization-en_US.js?v=0246591584232a6325b1af88966a271ab79612dc"></script>
+
+          <!-- FORM: BODY SECTION -->
+          <div class="wFormContainer" >
+              <div class="wFormHeader"></div>
+              <style type="text/css"></style><div class=""><div class="wForm" id="4696002-WRPR" dir="ltr">
+          <div class="codesection" id="code-4696002"><style>
+            .wFormContainer .wForm .primaryAction {
+            color: #ffffff; 
+            }
+            
+            .wFormContainer .wForm {
+              background: none;
+              
+            }
+            
+          </style></div>
+          <h3 class="wFormTitle" id="4696002-T">Subscribe to <i>Profession</i></h3>
+          <form method="post" action="https://www.tfaforms.com/responses/processor" class="hintsBelow labelsAbove" id="4696002" role="form">
+          <div class="oneField field-container-D    " id="tfa_1-D">
+          <label id="tfa_1-L" class="label preField " for="tfa_1">First name</label><br><div class="inputWrapper"><input type="text" id="tfa_1" name="tfa_1" value="" title="First name" class=""></div>
+          </div>
+          <div class="oneField field-container-D    " id="tfa_2-D">
+          <label id="tfa_2-L" class="label preField " for="tfa_2">Last name</label><br><div class="inputWrapper"><input type="text" id="tfa_2" name="tfa_2" value="" title="Last name" class=""></div>
+          </div>
+          <div class="oneField field-container-D    " id="tfa_4-D">
+          <label id="tfa_4-L" class="label preField reqMark" for="tfa_4">E-mail address</label><br><div class="inputWrapper"><input type="text" id="tfa_4" name="tfa_4" value="" aria-required="true" title="E-mail address" class="required"></div>
+          </div>
+          <div class="oneField field-container-D     wf-acl-hidden" id="tfa_5-D">
+          <label id="tfa_5-L" class="label preField " for="tfa_5">If you are a human and can see this, leave it blank. Do not fill it out.</label><br><div class="inputWrapper"><input type="text" id="tfa_5" name="tfa_5" value="" title="If you are a human and can see this, leave it blank. Do not fill it out." class=""></div>
+          </div>
+          <div class="actions" id="4696002-A"><input type="submit" data-label="Subscribe" class="primaryAction" id="submit_button" value="Subscribe"></div>
+          <div style="clear:both"></div>
+          <input type="hidden" value="4696002" name="tfa_dbFormId" id="tfa_dbFormId"><input type="hidden" value="" name="tfa_dbResponseId" id="tfa_dbResponseId"><input type="hidden" value="8c33fbcdef371b8dd0689249f16a22c9" name="tfa_dbControl" id="tfa_dbControl"><input type="hidden" value="7" name="tfa_dbVersionId" id="tfa_dbVersionId"><input type="hidden" value="" name="tfa_switchedoff" id="tfa_switchedoff">
+          </form>
+          </div></div><div class="wFormFooter"><p class="supportInfo"><br></p></div>
+            <p class="supportInfo" >
+                </p>
+          </div>
+
 
             </div>
             <!-- Subscribe form - end -->
