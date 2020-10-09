@@ -115,16 +115,5 @@
 
 	})
 </script>
-
-<!-- Mouseflow -->
-<script type="text/javascript">
-    window._mfq = window._mfq || [];
-    (function() {
-        var mf = document.createElement("script");
-        mf.type = "text/javascript"; mf.async = true;
-        mf.src = "//cdn.mouseflow.com/projects/8fbf472b-20d6-4d4b-b3d7-4eeb32b32f75.js";
-        document.getElementsByTagName("head")[0].appendChild(mf);
-    })();
-</script>
 </body>
 </html>
