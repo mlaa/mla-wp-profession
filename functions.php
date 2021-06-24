@@ -416,7 +416,6 @@ add_action( 'pre_get_posts', 'profession_search_query', 1 );
 add_action('wp_head', 'profession_googleanalytics');
 function profession_googleanalytics() { ?>
 
-// Paste your Google Analytics code
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1879594-1"></script>
 <script>
