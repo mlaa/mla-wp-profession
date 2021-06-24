@@ -411,3 +411,19 @@ function profession_search_query( $query ) {
 }
 
 add_action( 'pre_get_posts', 'profession_search_query', 1 );
+
+
+add_action('wp_head', 'profession_googleanalytics');
+function profession_googleanalytics() { ?>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1879594-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1879594-1');
+</script>
+
+<?php } ?>
