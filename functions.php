@@ -194,6 +194,7 @@ add_filter('excerpt_more', 'new_excerpt_ellipsis');
  function get_cc_license( $license ) {
    //$license_field = get_field_object($license);
    $license_field_value = $license['value'];
+   //$license_field_value = $license;
    if ($license_field_value == 'cc-by-4.0') {
      echo '<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><span class="license-type">This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>';
    } elseif ($license_field_value == 'cc-by-nc-4.0') {
